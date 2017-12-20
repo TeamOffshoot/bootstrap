@@ -1018,7 +1018,7 @@ if (typeof jQuery === 'undefined') {
             that.$element.trigger('focus').trigger(e)
           })
           .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-        that.$element.trigger('focus').trigger(e)
+        that.$element/*.trigger('focus')*/.trigger(e)
     })
   }
 

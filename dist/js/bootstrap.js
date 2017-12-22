@@ -1015,7 +1015,7 @@ if (typeof jQuery === 'undefined') {
       transition ?
         that.$dialog // wait for modal to slide in
           .one('bsTransitionEnd', function () {
-            that.$element.trigger('focus').trigger(e)
+            that.$element/*.trigger('focus')*/.trigger(e)
           })
           .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
         that.$element/*.trigger('focus')*/.trigger(e)
